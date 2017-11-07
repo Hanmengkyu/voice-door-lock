@@ -1,0 +1,10 @@
+## wav파일 -> raw 파일 변환 (sox 설치 필요)
+/resources  에서 실행
+sox english.wav --bits 16 --encoding signed-integer --endian little english.raw
+
+## 파일로 음성 text 추출
+/speech 에서 실행
+python transcribe.py resources/english.raw
+
+
+
